@@ -53,5 +53,16 @@ def number_to_short_month_name(month)
 end
 
 def volume_of_cube(length)
-  return length**3
+  volume = length**3
+  return volume
+end
+
+def volume_of_sphere(radius)
+  volume = ( ( 3.141592/3 )*4 ) * (radius**3)
+  return volume
+end
+
+def fahrenheit_to_celsius(fahrenheit)
+  celsius = ( (fahrenheit - 32) * 0.5556 )
+  return celsius
 end
