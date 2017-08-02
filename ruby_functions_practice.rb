@@ -3,11 +3,11 @@ def return_10
 end
 
 def add(first, second)
-  sum = first + second
+  return first + second
 end
 
 def subtract(first, second)
-  difference = first - second
+  return first - second
 end
 
 def multiply(first, second)
@@ -42,6 +42,11 @@ def number_to_full_month_name(month)
 end
 
 def number_to_short_month_name(month)
+  #full_month_name = number_to_full_month_name(month_number)
+  #
+  #short_month_name = full_month_name[0..2]
+  #return short_month_name
+
   case month
   when 1
     return "Jan"
@@ -58,11 +63,11 @@ def volume_of_cube(length)
 end
 
 def volume_of_sphere(radius)
-  volume = ( ( Math::PI/3 )*4 ) * (radius**3)
+  volume = ( ( Math::PI/3 )*4 ) * ( radius**3 )
   return volume
 end
 
 def fahrenheit_to_celsius(fahrenheit)
-  celsius = ( (fahrenheit - 32) * 0.5556 )
+  celsius = ( ( fahrenheit - 32 ) * (5.0/9.0) )
   return celsius
 end

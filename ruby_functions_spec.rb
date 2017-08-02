@@ -52,7 +52,7 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "September", ninth_month_string )
   end
 
-  def test_substring()
+  def test_number_to_short_month_name()
     first_month_string = number_to_short_month_name( 1 )
     third_month_string = number_to_short_month_name( 3 )
     ninth_month_string = number_to_short_month_name( 9 )
@@ -80,7 +80,7 @@ class Functions_Practice < MiniTest::Test
   #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
     celsius = fahrenheit_to_celsius(60)
-    assert_equal( 15.556799999999999, celsius)
+    assert_equal( 15.555555555555557, celsius)
   end
 
 end
